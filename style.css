@@ -162,7 +162,7 @@ div .normal-text {
 /* SECOND SECTION END*/
 
 /* Tablet */
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 769px) {
   /* header */
   .top-section p {
     color: #fff;
@@ -273,8 +273,9 @@ div .normal-text {
 }
 /* FIRST SECTION END*/
 /* Tablet  End*/
+
 /* Mobile*/
-@media (max-width: 425px) {
+@media (max-width: 576px) {
   .top-section p {
     color: #fff;
     font-size: 12px;
