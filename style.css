@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 .top-section {
   height: 4.5rem;
@@ -14,7 +13,7 @@
 }
 .top-section p {
   color: #fff;
-  font-size: 16px;
+  font-size: 12px;
   padding: 0 1.2rem;
   width: 95%;
   text-align: center;
@@ -26,35 +25,45 @@
 .top-section span {
   font-weight: bold;
 }
-/* HEADER */
+/* header */
+
 header {
   display: flex;
-  height: 5rem;
-  justify-content: space-around;
+  padding: 0 1rem;
+  justify-content: space-between;
+  height: 4rem;
   align-items: center;
-  color: #000;
 }
 .hamburger.header-icon {
-  display: none;
+  display: block;
+}
+.udemy-logo {
+  padding: 0 5rem;
+  height: 2.5rem;
+}
+
+.udemy-logo img {
+  height: inherit;
 }
 .header-icon {
   width: 25px;
   height: 25px;
 }
-a {
+header a {
+  display: none;
   text-decoration: none;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 20px;
   color: inherit;
 }
-a:hover {
+header a:hover {
   color: #5624d0;
 }
 .search-box {
   border: 2px solid #000;
-  width: 35%;
-  height: 3.5rem;
-  display: flex;
+  width: 40%;
+  height: 4rem;
+  display: none;
   justify-content: center;
   align-items: center;
   padding: 0 2rem;
@@ -66,69 +75,54 @@ input {
   height: 90%;
   border: none;
   outline: none;
-  font-size: 16px;
+  font-size: 19px;
   padding: 0 1rem;
   background-color: transparent;
 }
 
 .btn {
-  padding: 0.7rem;
-  margin-left: 0.5rem;
-  font-size: 12px;
+  display: none;
+  padding: 1rem;
+  width: 8%;
+  font-size: 17px;
   font-weight: bold;
 }
 
-.btn:hover {
-  opacity: 0.7;
-}
-
-.login-btn {
-  background-color: #fff;
-  color: #000;
-}
-.signup-btn {
-  background-color: #000;
-  color: #fff;
-}
-
-.world-icon-btn {
-  background-color: #fff;
-  height: 2.5rem;
-  width: 2.5rem;
-}
-
 .header-icon-mobile {
-  display: none;
+  display: block;
 }
 
 .world-icon-btn.special {
-  display: block;
+  display: none;
 }
-/* HEADER END */
 
 /* FIRST SECTION */
+.section1 {
+  height: 45rem;
+}
 
 #advert-img-text {
   background-color: #fff;
-  width: 31rem;
+  width: 100%;
   position: relative;
-  left: 3rem;
-  top: -27rem;
-  padding: 2rem;
+  left: 0;
+  top: 0;
+  padding: 1rem;
 }
 
 .clock-img {
   width: 100%;
-  height: 28rem;
+  height: 15rem;
 }
 
 div .big-text {
-  font-size: 35px;
+  font-size: 21px;
   font-weight: bolder;
   margin-bottom: 1rem;
 }
 div .normal-text {
-  font-size: 18px;
+  font-size: 15px;
+  background-color: rgb(213, 225, 239, 0.2);
   color: #698f9c;
 }
 
@@ -136,252 +130,145 @@ div .normal-text {
   background-color: #000;
   color: #fff;
   margin-top: 2rem;
-  padding: 1rem 0.5rem;
+  padding: 0.7rem 0.3rem;
   font-size: 15px;
 }
 .next-icon-div {
-  width: 100%;
-  display: flex;
-  padding: 0 2rem;
-  height: 3rem;
-  justify-content: space-between;
-  position: relative;
-  bottom: 35rem;
-}
-.next-icon-div img {
-  background-color: white;
-  border-radius: 50%;
+  display: none;
 }
 
-/* FIRST SECTION END*/
+/* First Section End */
 
 /* SECOND SECTION */
 .section2 {
-  margin-top: -10rem;
+  margin-top: -18rem;
+  height: fit-content;
+  padding: 1rem 2rem;
 }
-/* SECOND SECTION END*/
-
-/* Tablet */
-@media (min-width: 577px) and (max-width: 769px) {
-  /* header */
-  .top-section p {
-    color: #fff;
-    font-size: 17px;
-    padding: 0 1rem;
-    width: 95%;
-    text-align: center;
-  }
-  .hamburger.header-icon {
-    display: block;
-  }
-  .udemy-logo {
-    padding: 0 12rem;
-    height: 2.5rem;
-  }
-
-  .udemy-logo img {
-    height: inherit;
-  }
-  .header-icon {
-    width: 25px;
-    height: 25px;
-  }
-  a {
-    display: none;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 20px;
-    color: inherit;
-  }
-  a:hover {
-    color: #5624d0;
-  }
-  .search-box {
-    border: 2px solid #000;
-    width: 40%;
-    height: 4rem;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    padding: 0 2rem;
-    border-radius: 2rem;
-    background-color: rgb(213, 225, 239, 0.2);
-  }
-  input {
-    width: 100%;
-    height: 90%;
-    border: none;
-    outline: none;
-    font-size: 19px;
-    padding: 0 1rem;
-    background-color: transparent;
-  }
-
-  .btn {
-    display: none;
-    padding: 1rem;
-    width: 8%;
-    font-size: 17px;
-    font-weight: bold;
-  }
-
-  .header-icon-mobile {
-    display: block;
-  }
-
-  .world-icon-btn.special {
-    display: none;
-  }
-  /* HEAD END */
-
-  /* FIRST SECTION */
-
-  #advert-img-text {
-    background-color: #fff;
-    width: 21rem;
-    position: relative;
-    left: 3rem;
-    top: -19rem;
-    padding: 2rem;
-  }
-
-  .clock-img {
-    width: 100%;
-    height: 21rem;
-  }
-
-  div .big-text {
-    font-size: 21px;
-    font-weight: bolder;
-    margin-bottom: 1rem;
-  }
-  div .normal-text {
-    font-size: 12px;
-    color: #698f9c;
-  }
-
-  .request-btn {
-    background-color: #000;
-    color: #fff;
-    margin-top: 2rem;
-    padding: 0.8rem 0.3rem;
-    font-size: 16px;
-  }
-  .next-icon-div {
-    display: none;
-  }
+.section2-search-box {
+  border: 2px solid #698f9c;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  margin-bottom: 3rem;
 }
-/* FIRST SECTION END*/
-/* Tablet  End*/
-
-/* Mobile*/
-@media (max-width: 576px) {
-  .top-section p {
-    color: #fff;
-    font-size: 12px;
-    padding: 0 1rem;
-    width: 95%;
-    text-align: center;
-  }
-  .hamburger.header-icon {
-    display: block;
-  }
-  .udemy-logo {
-    padding: 0 4rem;
-    height: 2.5rem;
-  }
-
-  .udemy-logo img {
-    height: inherit;
-  }
-  .header-icon {
-    width: 25px;
-    height: 25px;
-  }
-  a {
-    display: none;
-    text-decoration: none;
-    cursor: pointer;
-    font-size: 20px;
-    color: inherit;
-  }
-  a:hover {
-    color: #5624d0;
-  }
-  .search-box {
-    border: 2px solid #000;
-    width: 40%;
-    height: 4rem;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    padding: 0 2rem;
-    border-radius: 2rem;
-    background-color: rgb(213, 225, 239, 0.2);
-  }
-  input {
-    width: 100%;
-    height: 90%;
-    border: none;
-    outline: none;
-    font-size: 19px;
-    padding: 0 1rem;
-    background-color: transparent;
-  }
-
-  .btn {
-    display: none;
-    padding: 1rem;
-    width: 8%;
-    font-size: 17px;
-    font-weight: bold;
-  }
-
-  .header-icon-mobile {
-    display: block;
-  }
-  .world-icon-btn.special {
-    display: none;
-  }
-
-  /* FIRST SECTION */
-  .section1 {
-    height: 45rem;
-  }
-
-  #advert-img-text {
-    background-color: #fff;
-    width: 100%;
-    position: relative;
-    left: 0;
-    top: 0;
-    padding: 1rem;
-  }
-
-  .clock-img {
-    width: 100%;
-    height: 15rem;
-  }
-
-  div .big-text {
-    font-size: 21px;
-    font-weight: bolder;
-    margin-bottom: 1rem;
-  }
-  div .normal-text {
-    font-size: 15px;
-    color: #698f9c;
-  }
-
-  .request-btn {
-    background-color: #000;
-    color: #fff;
-    margin-top: 2rem;
-    padding: 0.7rem 0.3rem;
-    font-size: 15px;
-  }
-  .next-icon-div {
-    display: none;
-  }
+input {
+  width: 100%;
+  height: 90%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 0 1rem;
+  background-color: transparent;
 }
-/* FIRST SECTION END*/
+
+.section2 h1 {
+  font-size: 23px;
+}
+.section2 p {
+  font-size: 20px;
+  padding: 1rem 0;
+  width: 100%;
+  color: #698f9c;
+}
+
+/* SECTION 3 */
+.section3 {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  height: 20rem;
+}
+.section3 ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+}
+.section3 ul li {
+  width: 100%;
+  padding: 0.5rem;
+  border-bottom: 1px solid #698f9c;
+  border-top: 0.3px solid #698f9c;
+}
+.section3 ul li a {
+  display: block;
+  font-size: 14px;
+}
+/* SECTION 3 END*/
+
+/* FOOTER */
+footer {
+  background-color: #1c1d1f;
+  color: #fff;
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 1.5rem;
+}
+.footer-top-div {
+  display: flex;
+  flex-direction: column-reverse;
+}
+footer div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer div ul {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+footer div ul li {
+  width: 100%;
+
+  margin-bottom: 1rem;
+}
+
+footer div ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+}
+
+footer div ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.udemy-logodark {
+  width: 10rem;
+  height: 5rem;
+}
+footer div button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  width: fit-content;
+  height: 4rem;
+  padding: 0.3rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  margin-bottom: 2rem;
+}
+
+.web-logo {
+  width: 22px;
+  margin-right: 5px;
+}
+
+footer div p {
+  text-align: left;
+}
