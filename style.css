@@ -3,6 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  width: 100%;
+}
+
 .top-section {
   height: 4.5rem;
   background-color: #5624d0;
@@ -293,16 +297,30 @@ input {
   height: 40rem;
   background-color: #fff;
   padding: 1rem 2rem;
+  width: 100%;
 }
 .section5 h1 {
   font-size: 25px;
 }
+
+
+
+.section5 .student-viewing-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  width: 40rem;
+  /* background-color: #000; */
+}
 .section5 .student-viewing-wrapper .viewing-student {
   display: flex;
-  width: 15rem;
+  width: 20rem;
   padding: 1rem;
   font-size: 13px;
   font-weight: bold;
+
+
 }
 
 .section5 .student-viewing-wrapper .viewing-student img {
@@ -354,6 +372,18 @@ input {
   font-size: 14px;
   margin-left: 0.5px;
 }
+
+.section5
+  .student-viewing-wrapper
+  .viewing-student
+  .section5-para-section
+  button{
+    color: #000;
+    background-color: gold;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 0.3rem;
+  }
 /* SECTION 5 END*/
 
 /* FOOTER */
@@ -428,3 +458,484 @@ footer div button {
 footer div p {
   text-align: left;
 }
+
+/* Laptop*/
+@media (min-width: 1024px) {
+  body {
+    font-family: sans-serif;
+  }
+
+  .top-section {
+    height: 4.5rem;
+    background-color: #5624d0;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .top-section p {
+    color: #fff;
+    font-size: 16px;
+    padding: 0 1.2rem;
+    width: 95%;
+    text-align: center;
+  }
+  .top-section img {
+    width: 25px;
+    height: 25px;
+  }
+  .top-section span {
+    font-weight: bold;
+  }
+  /* HEADER */
+  header {
+    display: flex;
+    height: 5rem;
+    justify-content: space-around;
+    align-items: center;
+    color: #000;
+  }
+  .hamburger.header-icon {
+    display: none;
+  }
+  .header-icon {
+    display: block;
+    width: 25px;
+    height: 25px;
+  }
+  a {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: inherit;
+  }
+  a:hover {
+    color: #5624d0;
+  }
+  .search-box {
+    border: 2px solid #000;
+    width: 35%;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    border-radius: 2rem;
+    background-color: rgb(213, 225, 239, 0.2);
+  }
+  input {
+    width: 100%;
+    height: 90%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 0 1rem;
+    background-color: transparent;
+  }
+
+  .btn {
+    display: block;
+    padding: 0.7rem;
+    margin-left: 0.5rem;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .btn:hover {
+    opacity: 0.7;
+  }
+
+  .login-btn {
+    background-color: #fff;
+    color: #000;
+  }
+  .signup-btn {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .world-icon-btn {
+    background-color: #fff;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
+  .header-icon-mobile {
+    display: none;
+  }
+
+  .world-icon-btn.special {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* HEADER END */
+
+  /* FIRST SECTION */
+
+  #advert-img-text {
+    background-color: #fff;
+    width: 31rem;
+    position: relative;
+    left: 3rem;
+    top: -27rem;
+    padding: 2rem;
+  }
+
+  .clock-img {
+    width: 100%;
+    height: 28rem;
+  }
+
+  div .big-text {
+    font-size: 35px;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+  }
+  div .normal-text {
+    font-size: 18px;
+    color: #698f9c;
+  }
+
+  .request-btn {
+    background-color: #000;
+    color: #fff;
+    margin-top: 2rem;
+    padding: 1rem 0.5rem;
+    font-size: 15px;
+  }
+  .next-icon-div {
+    width: 100%;
+    display: flex;
+    padding: 0 2rem;
+    height: 3rem;
+    justify-content: space-between;
+    position: relative;
+    bottom: 35rem;
+  }
+  .next-icon-div img {
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  /* FIRST SECTION END*/
+
+  /* SECOND SECTION */
+  .section2 {
+    margin-top: -15rem;
+    height: 20rem;
+    padding: 1rem 2rem;
+  }
+  .section2 h1 {
+    font-size: 30px;
+  }
+  .section2 p {
+    font-size: 30px;
+    padding: 2rem 0;
+    width: 70rem;
+    color: #698f9c;
+  }
+
+  /* SECOND SECTION END*/
+
+  /* THIRD SECTION */
+  .section3 {
+    display: flex;
+  }
+  /* THIRD SECTION END */
+
+  /* FOOTER */
+  footer {
+    background-color: #1c1d1f;
+    color: #fff;
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+  }
+  .footer-top-div {
+    display: flex;
+    flex-direction: row;
+  }
+  footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  footer div ul {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    width: 60rem;
+  }
+
+  footer div ul li {
+    width: 15rem;
+    max-width: 15rem;
+    margin-bottom: 1rem;
+  }
+
+  footer div ul li a {
+    font-size: 18px;
+  }
+
+  footer div ul li a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  .udemy-logodark {
+    width: 10rem;
+    height: 5rem;
+  }
+  footer div button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    height: 4rem;
+    padding: 0.8rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+  }
+
+  .web-logo {
+    width: 30px;
+    margin-right: 5px;
+  }
+
+  footer div p {
+    text-align: right;
+  }
+  /* FOOTER END*/
+}
+
+
+
+
+
+
+ /* Tablet */
+@media (min-width: 577px) and (max-width: 769px) {
+  .top-section {
+    height: 4.5rem;
+    background-color: #5624d0;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .top-section p {
+    color: #fff;
+    font-size: 17px;
+    padding: 0 1.2rem;
+    width: 95%;
+    text-align: center;
+  }
+  .top-section img {
+    width: 25px;
+    height: 25px;
+  }
+  .top-section span {
+    font-weight: bold;
+  }
+  /* header */
+
+  header {
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+    height: 4rem;
+    align-items: center;
+  }
+  .hamburger.header-icon {
+    display: block;
+  }
+  .udemy-logo {
+    padding: 0 12rem;
+    height: 2.5rem;
+  }
+
+  .udemy-logo img {
+    height: inherit;
+  }
+  .header-icon {
+    width: 25px;
+    height: 25px;
+  }
+  a {
+    display: none;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: inherit;
+  }
+  a:hover {
+    color: #5624d0;
+  }
+  .search-box {
+    border: 2px solid #000;
+    width: 40%;
+    height: 4rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    border-radius: 2rem;
+    background-color: rgb(213, 225, 239, 0.2);
+  }
+  input {
+    width: 100%;
+    height: 90%;
+    border: none;
+    outline: none;
+    font-size: 19px;
+    padding: 0 1rem;
+    background-color: transparent;
+  }
+
+  .btn {
+    display: none;
+    padding: 1rem;
+    width: 8%;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  .header-icon-mobile {
+    display: block;
+  }
+
+  .world-icon-btn.special {
+    display: none;
+  }
+  /* HEAD END */
+
+  /* FIRST SECTION */
+
+  #advert-img-text {
+    background-color: #fff;
+    width: 21rem;
+    position: relative;
+    left: 3rem;
+    top: -19rem;
+    padding: 2rem;
+  }
+
+  .clock-img {
+    width: 100%;
+    height: 21rem;
+  }
+
+  div .big-text {
+    font-size: 21px;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+  }
+  div .normal-text {
+    font-size: 12px;
+    color: #698f9c;
+  }
+
+  .request-btn {
+    background-color: #000;
+    color: #fff;
+    margin-top: 2rem;
+    padding: 0.8rem 0.3rem;
+    font-size: 16px;
+  }
+  .next-icon-div {
+    display: none;
+  }
+
+/* FIRST SECTION END*/
+
+/* SECOND SECTION */
+.section2 {
+  margin-top: -23rem;
+  height: 20rem;
+  padding: 1rem 2rem;
+}
+.section2 h1 {
+  font-size: 25px;
+}
+.section2 p {
+  font-size: 25px;
+  padding: 1rem 0;
+  width: 40rem;
+  color: #698f9c;
+}
+
+/* FOOTER */
+footer {
+  background-color: #1c1d1f;
+  color: #fff;
+  width: 100%;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+}
+.footer-top-div {
+  display: flex;
+  flex-direction: row;
+}
+footer div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer div ul {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  width: 60rem;
+}
+
+footer div ul li {
+  width: 10rem;
+  max-width: 10rem;
+  margin-bottom: 1rem;
+}
+
+footer div ul li a {
+  font-size: 15px;
+}
+
+footer div ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.udemy-logodark {
+  width: 10rem;
+  height: 5rem;
+}
+footer div button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  width: fit-content;
+  height: 4rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.web-logo {
+  width: 22px;
+  margin-right: 5px;
+}
+
+footer div p {
+  text-align: right;
+}
+
+/* Tablet  End */
