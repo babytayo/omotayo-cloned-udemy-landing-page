@@ -491,6 +491,10 @@ footer div p {
     align-items: center;
     color: #000;
   }
+
+  header .udemy-logo {
+    padding: 0;
+  }
   .hamburger.header-icon {
     display: none;
   }
@@ -499,14 +503,14 @@ footer div p {
     width: 25px;
     height: 25px;
   }
-  header ul li a {
+  header a {
     display: block;
     text-decoration: none;
     cursor: pointer;
     font-size: 14px;
     color: inherit;
   }
-  header ul li a:hover {
+  header a:hover {
     color: #5624d0;
   }
   .search-box {
@@ -620,7 +624,7 @@ footer div p {
   /* SECOND SECTION */
   .section2 {
     margin-top: -15rem;
-    height: 20rem;
+    height: -3rem;
     padding: 1rem 2rem;
   }
   .section2 h1 {
@@ -633,12 +637,43 @@ footer div p {
     color: #698f9c;
   }
 
+  .section2 .section2-search-box {
+    display: none;
+  }
   /* SECOND SECTION END*/
 
   /* THIRD SECTION */
   .section3 {
     display: flex;
   }
+
+  .section3 ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    border-bottom: none;
+    border-top: none;
+    padding-left: 1rem;
+    width: 70rem;
+  }
+  .section3 ul li {
+    width: 100%;
+    padding: 0;
+    border-bottom: none;
+  }
+  .section3 ul li a {
+    display: block;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .section3-advert {
+    display: none;
+  }
+
+  /* SECTION 3 END*/
   /* THIRD SECTION END */
 
   /* FOOTER */
@@ -848,7 +883,7 @@ footer div p {
   /* SECOND SECTION */
   .section2 {
     margin-top: -23rem;
-    height: 20rem;
+    height: -7rem;
     padding: 1rem 2rem;
   }
   .section2 h1 {
@@ -859,6 +894,40 @@ footer div p {
     padding: 1rem 0;
     width: 40rem;
     color: #698f9c;
+  }
+
+  .section2 .section2-search-box {
+    display: none;
+  }
+
+  /* SECTION3 */
+  .section3 {
+    display: flex;
+  }
+  .section3 ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    border-bottom: none;
+    border-top: none;
+    padding-left: 1rem;
+    width: 40rem;
+  }
+  .section3 ul li {
+    width: 100%;
+    padding: 0;
+    border-bottom: none;
+  }
+  .section3 ul li a {
+    display: block;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12px;
+  }
+  .section3-advert {
+    display: none;
   }
 
   /* FOOTER */
