@@ -1,9 +1,16 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
   width: 100%;
 }
 
@@ -223,6 +230,8 @@ input {
   background-color: rgba(191, 193, 194, 0.1);
   padding: 0 1rem;
   margin-bottom: 2rem;
+  width: 100%;
+  overflow: hidden;
 }
 .section4 h1 {
   padding: 1rem 2rem;
@@ -231,6 +240,7 @@ input {
 
 .section4 .section4-learner-wrapper {
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
   flex-direction: row;
@@ -276,7 +286,6 @@ input {
 }
 
 .section4 .section4-learner-wrapper div .play-section4 {
-  /* display: flex; */
   width: 100%;
   color: #5624d0;
   align-items: center;
@@ -294,10 +303,11 @@ input {
 /* SECTION 5 */
 
 .section5 {
-  height: 40rem;
+  /* height: 40rem; */
   background-color: #fff;
   padding: 1rem 2rem;
   width: 100%;
+  overflow: hidden;
 }
 .section5 h1 {
   font-size: 25px;
@@ -309,11 +319,10 @@ input {
   flex-wrap: wrap;
   margin-top: 1rem;
   width: 40rem;
-  /* background-color: #000; */
 }
 .section5 .student-viewing-wrapper .viewing-student {
   display: flex;
-  width: 20rem;
+  width: 17rem;
   padding: 1rem;
   font-size: 13px;
   font-weight: bold;
@@ -674,7 +683,103 @@ footer div p {
   }
 
   /* SECTION 3 END*/
+
+  /* SECTION 4 */
+  .section4 {
+    width: 100%;
+  }
   /* THIRD SECTION END */
+
+  /* SECTION 5 */
+
+  .section5 {
+    height: 40rem;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+  .section5 h1 {
+    font-size: 25px;
+  }
+
+  .section5 .student-viewing-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    width: 120rem;
+  }
+  .section5 .student-viewing-wrapper .viewing-student {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    padding: 1rem;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .section5 .student-viewing-wrapper .viewing-student img {
+    height: 10rem;
+    width: 20rem;
+  }
+
+  .section5 .student-viewing-wrapper .viewing-student .section5-para-section {
+    margin-left: 5px;
+  }
+
+  .section5
+    .student-viewing-wrapper
+    .viewing-student
+    .section5-para-section
+    .section5-para2 {
+    color: goldenrod;
+    font-size: 22px;
+  }
+
+  .section5
+    .student-viewing-wrapper
+    .viewing-student
+    .section5-para-section
+    .section5-para2 {
+    color: goldenrod;
+    display: flex;
+    /* align-items: start; */
+    justify-content: start;
+  }
+
+  .section5
+    .student-viewing-wrapper
+    .viewing-student
+    .section5-para-section
+    .section5-para2
+    img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .section5
+    .student-viewing-wrapper
+    .viewing-student
+    .section5-para-section
+    p
+    span {
+    color: #8bacd9;
+    font-size: 14px;
+    margin-left: 0.5px;
+  }
+
+  .section5
+    .student-viewing-wrapper
+    .viewing-student
+    .section5-para-section
+    button {
+    color: #000;
+    background-color: gold;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 0.3rem;
+  }
+  /* SECTION 5 END*/
 
   /* FOOTER */
   footer {
@@ -704,8 +809,8 @@ footer div p {
   }
 
   footer div ul li {
-    width: 15rem;
-    max-width: 15rem;
+    width: 20rem;
+    max-width: 20rem;
     margin-bottom: 1rem;
   }
 
